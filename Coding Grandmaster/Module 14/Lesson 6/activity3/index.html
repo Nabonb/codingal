@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Simple Calculator</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="calculator">
+      <input type="text" id="result" readonly />
+
+      <div class="buttons">
+        <button onclick="setScreenValue('7')">7</button>
+        <button onclick="setScreenValue('8')">8</button>
+        <button onclick="setScreenValue('9')">9</button>
+        <button onclick="setScreenValue('/')">/</button>
+
+        <button onclick="setScreenValue('4')">4</button>
+        <button onclick="setScreenValue('5')">5</button>
+        <button onclick="setScreenValue('6')">6</button>
+        <button onclick="setScreenValue('*')">*</button>
+
+        <button onclick="setScreenValue('1')">1</button>
+        <button onclick="setScreenValue('2')">2</button>
+        <button onclick="setScreenValue('3')">3</button>
+        <button onclick="setScreenValue('-')">-</button>
+
+        <button onclick="setScreenValue('0')">0</button>
+        <button onclick="setScreenValue('.')">.</button>
+        <button onclick="calculateResult()">=</button>
+        <button onclick="setScreenValue('+')">+</button>
+
+        <button class="clear" onclick="clearScreen()">Clear</button>
+      </div>
+    </div>
+
+    <!-- Connect JavaScript -->
+    <script src="index.js"></script>
+  </body>
+</html>
