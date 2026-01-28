@@ -1,5 +1,4 @@
-# Python program to overload equality
-# and less than operators
+
 
 class A:
 	def __init__(self, a):
