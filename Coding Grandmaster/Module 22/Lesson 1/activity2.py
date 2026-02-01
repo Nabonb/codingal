@@ -8,12 +8,11 @@ display_surface = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption('Adding image and background image')
 
 background_image = pygame.transform.scale(
-    pygame.image.load('background.png').convert(),
-    (SCREEN_WIDTH, SCREEN_HEIGHT)
-)
+    pygame.image.load('D:\Codingal Trial\Courses\Coding Grandmaster\Module 22\Lesson 1\Background.jpg').convert(),
+    (SCREEN_WIDTH, SCREEN_HEIGHT))
 
 penguin_image = pygame.transform.scale(
-    pygame.image.load('hello penguin.png').convert_alpha(),
+    pygame.image.load('D:\Codingal Trial\Courses\Coding Grandmaster\Module 22\Lesson 1\Penguin.jpg').convert_alpha(),
     (200, 200)
 )
 
@@ -30,7 +29,6 @@ text_rect = text.get_rect(
 )
 
 def game_loop():
-    clock = pygame.time.Clock()
     running = True
 
     while running:
@@ -43,9 +41,8 @@ def game_loop():
         display_surface.blit(text, text_rect)
 
         pygame.display.flip()
-        clock.tick(30)
 
-    pygame.quit()
+    #pygame.quit()
 
 if __name__ == '__main__':
     game_loop()
