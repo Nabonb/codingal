@@ -1,1 +1,1 @@
-done
+pygame.event.get()
